@@ -1,0 +1,11 @@
+import React from "react";
+import btnIcon from "../assets/images/button_arrow.png";
+const Button = ({ text }) => {
+  return (
+    <button className="text-sm text-primary flex items-center gap-1">
+      {text} <img src={btnIcon} alt="btn icon" />
+    </button>
+  );
+};
+
+export default Button;

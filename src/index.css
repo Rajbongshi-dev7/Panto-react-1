@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@theme {
+  --font-poppins: "Poppins", sans-serif;
+  --color-primary: #e58411;
+}
+@layer utilities {
+  .section-container {
+    @apply max-w-screen-2xl container mx-auto py-6 px-4;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    @apply px-4 py-2 ring-1 ring-primary  hover:bg-primary rounded-full bg-white text-lg;
+  }
+  .swiper-button-prev svg,
+  .swiper-button-next svg {
+    @apply text-black;
+  }
+}
